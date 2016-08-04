@@ -8,7 +8,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.itproject.android.song2go.Activities.LoginActivity"
-    android:background="#000000">
+    android:background="#4e043d"
+    android:textAlignment="center"
+    android:longClickable="false">
 
     <EditText
         android:layout_width="wrap_content"
@@ -18,7 +20,9 @@
         android:id="@+id/txtusername"
         android:hint="Username"
         android:layout_above="@+id/txtpassword"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#4e043d"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -27,31 +31,35 @@
         android:ems="10"
         android:id="@+id/txtpassword"
         android:hint="Password"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/txtusername"
-        android:layout_alignStart="@+id/txtusername" />
+        android:layout_alignStart="@+id/txtusername"
+        android:layout_marginBottom="211dp"
+        android:backgroundTint="#4e043d"
+        android:textAlignment="center" />
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         android:text="Login"
         android:id="@+id/btnlogin"
+        android:onClick="login"
         android:layout_marginTop="60dp"
-        android:layout_below="@+id/txtpassword"
-        android:layout_centerHorizontal="true"
-        android:onClick="login"/>
+        android:layout_alignTop="@+id/txtpassword"
+        android:elevation="10dp"
+        android:background="#fc2cf5"
+        android:layout_alignRight="@+id/txtpassword"
+        android:layout_alignEnd="@+id/txtpassword"
+        android:layout_alignLeft="@+id/txtpassword"
+        android:layout_alignStart="@+id/txtpassword" />
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Song2Go"
-        android:id="@+id/textView2"
-        android:textColor="#ffffff"
-        android:fontFamily="ssss"
-        android:autoText="true"
-        android:textSize="50dp"
-        android:layout_above="@+id/txtusername"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp" />
+        android:id="@+id/imageView2"
+        android:background="@drawable/logogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/txtusername" />
 
 </RelativeLayout>
