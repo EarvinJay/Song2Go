@@ -22,7 +22,7 @@ public class Player extends AppCompatActivity implements View.OnClickListener {
     MediaController mediaController;
     static MediaPlayer mp;
     VideoView video;
-    Uri uri,Vuri;
+    Uri uri;
     int position;
     SeekBar sb;
     Button btnforward,btnbackward,btnnext,btnprev,btnpause;
