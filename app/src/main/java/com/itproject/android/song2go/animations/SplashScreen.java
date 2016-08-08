@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 
+import com.facebook.FacebookSdk;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FileDownloadTask;
@@ -30,7 +31,7 @@ public class SplashScreen extends Activity {
         setContentView(R.layout.activity_splash_screen);
 
 
-
+        FacebookSdk.sdkInitialize(getApplicationContext());
         new Handler().postDelayed(new Runnable() {
 
             /*
